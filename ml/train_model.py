@@ -52,7 +52,7 @@ X = df[features]
 # ==================================
 # TARGET
 # ==================================
-y = df["stress_score"]
+y = df["custom_stress_score"]
 
 # ==================================
 # TRAIN TEST SPLIT

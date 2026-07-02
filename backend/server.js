@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -6,7 +7,7 @@ const Student = require("./models/Student");
 const authRoutes = require("./routes/authRoutes");
 const burnoutRoutes = require("./routes/burnoutRoutes");
 const auth = require("./middleware/auth");
-
+const chatbotRoutes = require("./routes/chatbotRoutes");
 const app = express();
 const PORT = 5000;
 
@@ -21,7 +22,7 @@ app.use(express.json());
 // ======================
 app.use("/api/auth", authRoutes);
 app.use("/api/burnout", burnoutRoutes);
-
+app.use("/api/chat", chatbotRoutes);
 // ======================
 // MongoDB Connection
 // ======================

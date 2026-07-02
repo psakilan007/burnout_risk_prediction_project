@@ -3,7 +3,7 @@ import axios from "axios";
 import Login from "./Login";
 import Signup from "./Signup";
 import BiometricScanner from "./components/BiometricScanner";
-
+import MindTraceChat from "./components/MindTraceChat";
 import {
   LineChart,
   Line,
@@ -350,6 +350,9 @@ function App() {
           onClose={() => setShowScanner(false)}
         />
       )}
+
+      {/* AI CHATBOT */}
+      <MindTraceChat />
     </div>
   );
 }

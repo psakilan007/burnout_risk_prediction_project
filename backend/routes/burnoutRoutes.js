@@ -33,7 +33,7 @@ router.get("/predict", auth, async (req, res) => {
         steps: student.steps,
         screen_time_min: 180,
         workout_minutes: 45,
-        mindfulness_minutes: 20,
+        mindfulness_minutes: 20 ,
       }
     );
 
